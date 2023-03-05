@@ -1,2 +1,2 @@
 # PianoButLDR
-Wanna play piano using LDR sensor? I gotchu fam
+Wanna play piano using LDR sensor?
