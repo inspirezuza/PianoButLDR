@@ -1,0 +1,2 @@
+PORT = "COM4"
+DEFAULT_MODE = 1
