@@ -1,6 +1,7 @@
 test/
 esp32/testesp/
 esp32/sketchpiano/config.h
+config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
