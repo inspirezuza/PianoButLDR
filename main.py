@@ -2,16 +2,19 @@ import serial
 import os
 import time
 import config
-from pygame import mixer
+import pygame
+import pygame
 
-mode = int(config.DEFAULT_MODE)
+instrument = [filename for filename in os.listdir(r"audio")]
+mode = mode = instrument.index(config.DEFAULT_MODE)
 PORT = config.PORT
 
 ser = serial.Serial(PORT , 115200) # open the serial port with the same baud rate as the Arduino code
 
-mixer.init()
-mixer.set_num_channels(50)
-instrument = [filename for filename in os.listdir(r"audio")]
+# displaypygame.display_setup()
+pygame.mixer.init()
+pygame.mixer.set_num_channels(50)
+
 notes = ['C4','D4','E4','F4','G4','A4','B4','C5','D5']
 cur_instrument = instrument[0]
 ser.write(cur_instrument.encode())
@@ -21,11 +24,11 @@ def playmusic(key,mode):
     print(key)
     print(instrument[mode])
     print(notes[key])
-    mixer.Channel(key).play(mixer.Sound(f'audio\\{instrument[mode]}\\{notes[key]}.wav'),fade_ms=100)
-    # mixer.Sound(f'audio\\{instrument[mode]}\\{note}.mp3').play(fade_ms=100,)
+    pygame.mixer.Channel(key).play(pygame.mixer.Sound(f'audio\\{instrument[mode]}\\{notes[key]}.wav'),fade_ms=100)
+    # pygame.mixer.Sound(f'audio\\{instrument[mode]}\\{note}.mp3').play(fade_ms=100,)
 
 def stopmusic(key):
-    mixer.Channel(key).fadeout(500) 
+    pygame.mixer.Channel(key).fadeout(500) 
 
 ldrstatus = [False]*50
 while True:

@@ -10,6 +10,7 @@
 #define TOPIC_LIGHT    TOPIC_PREFIX "/light"
 #define TOPIC_LED_RED  TOPIC_PREFIX "/led/red"
 #define TOPIC_ADJUST  TOPIC_PREFIX "/adjust"
+#define TOPIC_INSTRUMENT TOPIC_PREFIX "/instrument"
 
 const int notes = 9;
 const int max_notes = 12;

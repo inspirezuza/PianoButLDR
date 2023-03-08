@@ -1,2 +1,2 @@
 PORT = "COM4"
-DEFAULT_MODE = 1
+DEFAULT_MODE = "piano"
