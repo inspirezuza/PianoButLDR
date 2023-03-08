@@ -3,7 +3,7 @@ import os
 import time
 import config
 import pygame
-import pygame
+
 
 instrument = [filename for filename in os.listdir(r"audio")]
 mode = mode = instrument.index(config.DEFAULT_MODE)
