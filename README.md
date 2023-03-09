@@ -35,7 +35,7 @@
 
 3. Enter your mqtt config in `config.py and esp32\sketch_piano\config.h` here example
    ```python
-   #config.py
+    #config.py
     PORT = "COM4"
     DEFAULT_INSTRUMENT = "piano"
     MQTT_BROKER = "iot.cpe.ku.ac.th"
@@ -45,7 +45,7 @@
     IOT_PORT = 1883
    ```
    ```c
-   //config.h
+    //config.h
     #define WIFI_SSID    "wifiname"
     #define WIFI_PASS    "12345678"
     #define MQTT_BROKER  "iot.cpe.ku.ac.th"
