@@ -62,14 +62,12 @@
    ```
 
 6. Open node red if you on 01204114-65 course open this link and login iot.cpe.ku.ac.th/red/b65101234567
+
 Node Red Link: [iot.cpe.ku.ac.th/red/b65101234567](iot.cpe.ku.ac.th/red/b65101234567) 
 
 7. Import flows.json don't forget to change username (b6510123456)
 
 8. Deploy and open dashboard
-
-9. Enjoy
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
