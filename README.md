@@ -16,7 +16,6 @@ Best-README-Template/pull/73 -->
 
   <p align="center">
     Wanna play piano using LDR sensor?
-
     This project is for 01204114-65 Introduction to Computer Hardware Development (Kasetsart University first year cpe course)
   </p>
 </div>
@@ -37,6 +36,7 @@ Best-README-Template/pull/73 -->
 
 3. Enter your mqtt config in `config.py and esp32\sketch_piano\config.h` here example
    ```python
+   #config.py
     PORT = "COM4"
     DEFAULT_INSTRUMENT = "piano"
     MQTT_BROKER = "iot.cpe.ku.ac.th"
@@ -46,6 +46,7 @@ Best-README-Template/pull/73 -->
     IOT_PORT = 1883
    ```
    ```c
+   //config.h
     #define WIFI_SSID    "wifiname"
     #define WIFI_PASS    "12345678"
     #define MQTT_BROKER  "iot.cpe.ku.ac.th"
