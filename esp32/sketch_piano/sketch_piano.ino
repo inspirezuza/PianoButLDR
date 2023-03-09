@@ -132,7 +132,7 @@ void loop() {
     mqtt.publish(TOPIC_LIGHT, String(ldr_status_mqtt).c_str());
     last_publish = now;
     // mqtt.loop();    
-    Serial.println("threshold " + String(threshold));
+    // Serial.println("threshold " + String(threshold));
   }
 
   // publish light value periodically (without using delay)
