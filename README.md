@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
 
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown from this link XD
@@ -83,6 +82,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Some list resources that I find helpful and would like to give credit to.
 
-* [Instruments mp3](https://github.com/gleitz/midi-js-soundfonts/tree/gh-pages/FatBoy)
+* [Instruments mp3 files](https://github.com/gleitz/midi-js-soundfonts/tree/gh-pages/FatBoy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
