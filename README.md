@@ -1,22 +1,44 @@
-<a name="readme-top"></a>
+#PianoButLDR
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown from this link XD
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+##Project description
+###This project has been made for 
+* Course name : 01204114-65 Introduction to Computer Hardware Development 
+* Department of Computer Engineering, Faculty of Engineering
+* Kasetsart University
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
+##Our team 
+* พงศธร รักงาน 6510503531
+* พิชญา เอี่ยมกล้าหาญ 6510503620
+* ภาณุพงศ์ เลิศวีรนนทรัตน์ 6510503671
+* วรพล วัลลิภากร 6510503751
 
-  <h3 align="center">PianoButLDR</h3>
+##อุปกรณ์ที่ใช้
+###บอร์ดแรก
+* ESP32-S3 1 ตัว
+* LDR 9 ตัว
+* ตัวต้านทาน 10K 9 ตัว
+###บอร์ดสอง
+* ESP32-S3 1 ตัว
+* Button 3 ตัว
+* ตัวต้านทาน 10K 3 ตัว
+* OLED 1 ตัว
 
-  <p align="center">
-    Wanna play piano using LDR sensor?
-    This project is for 01204114-65 Introduction to Computer Hardware Development (Kasetsart University first year cpe course)
-  </p>
-</div>
+##Requirement
+```sh
+#requirements.txt
+paho-mqtt==1.6.1
+pygame==2.1.3
+pyserial==3.5
+```
+
+##Directory
+* esp32/ : จะมี folder  sketch ใช้สำหรับ upload ขึ้นบอร์ด esp32 ทั้ง 2 ตัว
+* esp32/example_sketch/config.h : คือไฟล์ที่จำเป็นต้องแก้ไขตามด้านในไฟล์
+* config.py : คือไฟล์ที่จำเป็นต้องแก้ไขตามด้านในไฟล์
+* requirement.txt : library ที่จำเป็นสำหรับ main.py สามารถลงได้ตามขั้นตอนด้านล่าง
+* main.py : ไฟล์หลักสำหรับทำให้เปียโนเริ่มทำงาน
+* audio/ : หากต้องการเพิ่มเครื่องดนตรี หรือเสียงต่างๆ สามารถเพิ่มได้ที่ audio/ 
+* flows.json : flows การทำงานของ node red ที่ export มา สามารถนำไป import เข้า node red ของคุณได้ 
 
 ## Getting Started
 
@@ -60,22 +82,17 @@
    python main.py
    ```
 
-6. Open node red if you on 01204114-65 course open this link and login iot.cpe.ku.ac.th/red/b65101234567
-
-Node Red Link: [iot.cpe.ku.ac.th/red/b65101234567](iot.cpe.ku.ac.th/red/b65101234567) 
+6. Open node red if you on 01204114-65 course open this link and login
+* [iot.cpe.ku.ac.th/red/b65101234567](iot.cpe.ku.ac.th/red/b65101234567) 
 
 7. Import flows.json don't forget to change username (b6510123456)
 
 8. Deploy and open dashboard
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -83,5 +100,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Some list resources that I find helpful and would like to give credit to.
 
 * [Instruments mp3 files](https://github.com/gleitz/midi-js-soundfonts/tree/gh-pages/FatBoy)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
