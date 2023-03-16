@@ -1,29 +1,29 @@
-#PianoButLDR
+# PianoButLDR
 
-##Project description
-###This project has been made for 
+## Project description
+### This project has been made for 
 * Course name : 01204114-65 Introduction to Computer Hardware Development 
 * Department of Computer Engineering, Faculty of Engineering
 * Kasetsart University
 
-##Our team 
+## Our team 
 * พงศธร รักงาน 6510503531
 * พิชญา เอี่ยมกล้าหาญ 6510503620
 * ภาณุพงศ์ เลิศวีรนนทรัตน์ 6510503671
 * วรพล วัลลิภากร 6510503751
 
-##อุปกรณ์ที่ใช้
-###บอร์ดแรก
+## อุปกรณ์ที่ใช้
+### บอร์ดแรก
 * ESP32-S3 1 ตัว
 * LDR 9 ตัว
 * ตัวต้านทาน 10K 9 ตัว
-###บอร์ดสอง
+### บอร์ดสอง
 * ESP32-S3 1 ตัว
 * Button 3 ตัว
 * ตัวต้านทาน 10K 3 ตัว
 * OLED 1 ตัว
 
-##Requirement
+## Requirement
 ```sh
 #requirements.txt
 paho-mqtt==1.6.1
@@ -31,7 +31,7 @@ pygame==2.1.3
 pyserial==3.5
 ```
 
-##Directory
+## Directory
 * esp32/ : จะมี folder  sketch ใช้สำหรับ upload ขึ้นบอร์ด esp32 ทั้ง 2 ตัว
 * esp32/example_sketch/config.h : คือไฟล์ที่จำเป็นต้องแก้ไขตามด้านในไฟล์
 * config.py : คือไฟล์ที่จำเป็นต้องแก้ไขตามด้านในไฟล์
