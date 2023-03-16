@@ -1,8 +1,7 @@
 # PianoButLDR
 
-## Project description
 ### This project has been made for 
-* Course name : 01204114-65 Introduction to Computer Hardware Development 
+* 01204114-65 Introduction to Computer Hardware Development 
 * Department of Computer Engineering, Faculty of Engineering
 * Kasetsart University
 
