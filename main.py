@@ -78,7 +78,8 @@ while True:
     client.loop(timeout=0)
     data = ser.readline().decode('utf-8').strip() # read a single byte from the serial port
     if data == '': continue
-    if data[0].isnumeric() and data[-1].isnumeric():
+    elif data[0].isnumeric() and data[-1].isnumeric():
+        # print(data)
         for i in range(len(data)):
             if data[i] == '1' and ldrstatus[i] == False:
                 playmusic(i,cur_instrument)
